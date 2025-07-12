@@ -1,0 +1,21 @@
+{
+  "name": "KEY 2 BHP - Auto Locksmith Manchester",
+  "short_name": "KEY 2 BHP",
+  "description": "24/7 Female Auto Locksmith Services in Manchester. Car key replacement, lockout help, ignition repair, and more.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ea580c",
+  "icons": [
+    {
+      "src": "/images/uk-lock-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/uk-lock-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+} 
