@@ -7,7 +7,7 @@ export const metadata = {
     url: "https://key2bhp.co.uk/services",
     siteName: "KEY 2 BHP",
     locale: "en_GB",
-    type: "service",
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
