@@ -80,6 +80,192 @@ export default function AboutPage() {
     "Mobile Service Certified",
   ]
 
+  // New data for additional sections
+  const companyHistory = [
+    {
+      year: "2020",
+      title: "Company Founded",
+      description: "KEY 2 BHP was established with a vision to provide reliable, female-led locksmith services in Manchester."
+    },
+    {
+      year: "2021",
+      title: "Service Expansion",
+      description: "Expanded services to cover all of Greater Manchester with mobile locksmith units."
+    },
+    {
+      year: "2022",
+      title: "Technology Upgrade",
+      description: "Invested in advanced key programming equipment and diagnostic tools for modern vehicles."
+    },
+    {
+      year: "2023",
+      title: "Customer Recognition",
+      description: "Achieved 5-star rating across all platforms and became Manchester's most trusted locksmith."
+    },
+    {
+      year: "2024",
+      title: "Future Growth",
+      description: "Planning to launch mobile app and expand services to surrounding areas."
+    }
+  ]
+
+  const serviceAreas = [
+    {
+      area: "Manchester City Centre",
+      responseTime: "15-20 minutes",
+      services: ["Emergency lockouts", "Key replacement", "Ignition repair"]
+    },
+    {
+      area: "Salford",
+      responseTime: "20-25 minutes",
+      services: ["Car key programming", "Transponder keys", "Mobile service"]
+    },
+    {
+      area: "Stockport",
+      responseTime: "25-30 minutes",
+      services: ["Emergency assistance", "Key cutting", "Diagnostic services"]
+    },
+    {
+      area: "Oldham",
+      responseTime: "25-30 minutes",
+      services: ["24/7 service", "Professional locksmith", "Affordable rates"]
+    },
+    {
+      area: "Rochdale",
+      responseTime: "30-35 minutes",
+      services: ["Mobile locksmith", "Car security", "Key programming"]
+    },
+    {
+      area: "Bury",
+      responseTime: "30-35 minutes",
+      services: ["Emergency response", "Professional service", "Quality guarantee"]
+    }
+  ]
+
+  const equipment = [
+    {
+      name: "Advanced Key Programming Equipment",
+      description: "State-of-the-art equipment for programming transponder keys, smart keys, and remote fobs",
+      icon: "🔧"
+    },
+    {
+      name: "Computerized Key Cutting Machines",
+      description: "Precision key cutting for all vehicle makes and models with computerized accuracy",
+      icon: "✂️"
+    },
+    {
+      name: "Diagnostic Tools",
+      description: "Professional diagnostic equipment for ignition and security system troubleshooting",
+      icon: "🔍"
+    },
+    {
+      name: "Mobile Workshop",
+      description: "Fully equipped mobile vans with all necessary tools and equipment for on-site service",
+      icon: "🚐"
+    },
+    {
+      name: "Security Tools",
+      description: "Specialized tools for safe lockout assistance without damage to your vehicle",
+      icon: "🛡️"
+    },
+    {
+      name: "Communication Systems",
+      description: "Real-time communication and tracking systems for efficient service delivery",
+      icon: "📱"
+    }
+  ]
+
+  const testimonials = [
+    {
+      name: "Emma Thompson",
+      location: "Chorlton, Manchester",
+      rating: 5,
+      text: "Amazing service! I was locked out of my car late at night and they arrived within 20 minutes. Professional, friendly, and got me back in my car without any damage.",
+      service: "Emergency Lockout"
+    },
+    {
+      name: "David Wilson",
+      location: "Salford",
+      rating: 5,
+      text: "Lost my car keys and needed a replacement. They came to my location, cut a new key, and programmed it on the spot. Excellent work and reasonable pricing.",
+      service: "Key Replacement"
+    },
+    {
+      name: "Sarah Johnson",
+      location: "Didsbury",
+      rating: 5,
+      text: "My ignition was having issues and wouldn't start. They diagnosed the problem and fixed it right there. Very knowledgeable and professional service.",
+      service: "Ignition Repair"
+    },
+    {
+      name: "Michael Patel",
+      location: "Stockport",
+      rating: 5,
+      text: "Broken key stuck in my ignition. They extracted it safely without any damage to my car. Fast, efficient, and reasonably priced. Great service!",
+      service: "Key Extraction"
+    }
+  ]
+
+  const awards = [
+    {
+      title: "Best Auto Locksmith 2024",
+      organization: "Manchester Business Awards",
+      year: "2024",
+      description: "Recognized for excellence in automotive locksmith services"
+    },
+    {
+      title: "Customer Service Excellence",
+      organization: "Greater Manchester Chamber",
+      year: "2023",
+      description: "Awarded for outstanding customer service and satisfaction"
+    },
+    {
+      title: "Emergency Service Provider",
+      organization: "Auto Locksmith Association",
+      year: "2023",
+      description: "Certified emergency service provider with 24/7 availability"
+    },
+    {
+      title: "Female-Owned Business Award",
+      organization: "Women in Business Network",
+      year: "2022",
+      description: "Recognized for excellence in female entrepreneurship"
+    }
+  ]
+
+  const safetyMeasures = [
+    {
+      title: "DBS Checked Technicians",
+      description: "All our technicians undergo thorough background checks for your safety and peace of mind",
+      icon: "🛡️"
+    },
+    {
+      title: "Fully Insured Service",
+      description: "Comprehensive insurance coverage protects you and your vehicle during our service",
+      icon: "📋"
+    },
+    {
+      title: "No Damage Guarantee",
+      description: "We guarantee no damage to your vehicle during lockout or key replacement services",
+      icon: "✅"
+    },
+    {
+      title: "Licensed & Certified",
+      description: "All technicians are licensed, certified, and trained in the latest automotive security systems",
+      icon: "🎓"
+    },
+    {
+      title: "Secure Payment Methods",
+      description: "Multiple secure payment options including card, cash, and digital payments",
+      icon: "💳"
+    },
+    {
+      title: "Privacy Protection",
+      description: "Your personal information and vehicle details are kept confidential and secure",
+      icon: "🔒"
+    }
+  ]
+
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -226,6 +412,231 @@ export default function AboutPage() {
                   </CardHeader>
                   <CardContent>
                     <CardDescription className="text-slate-600 leading-relaxed">{value.description}</CardDescription>
+                  </CardContent>
+                </AnimatedCard>
+              ))}
+            </div>
+          </AnimatedList>
+        </div>
+      </section>
+
+      {/* Company History Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-6 text-slate-900">Our Journey</h2>
+              <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+                A brief overview of how KEY 2 BHP has evolved over the years
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedList>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {companyHistory.map((history, index) => (
+                <AnimatedCard key={index} delay={index * 0.1} className="text-center hover:shadow-lg transition-shadow border-0 shadow-md">
+                  <CardHeader>
+                    <FloatingIcon>
+                      <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Clock className="h-8 w-8 text-white" />
+                      </div>
+                    </FloatingIcon>
+                    <CardTitle className="text-xl text-slate-900">{history.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-slate-600 leading-relaxed">{history.description}</CardDescription>
+                  </CardContent>
+                </AnimatedCard>
+              ))}
+            </div>
+          </AnimatedList>
+        </div>
+      </section>
+
+      {/* Service Areas Section */}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-6 text-slate-900">Our Service Areas</h2>
+              <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+                We provide fast, reliable, and affordable locksmith services across Greater Manchester.
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedList>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {serviceAreas.map((area, index) => (
+                <AnimatedCard key={index} delay={index * 0.1} className="text-center hover:shadow-lg transition-shadow border-0 shadow-md">
+                  <CardHeader>
+                    <FloatingIcon>
+                      <div className="bg-purple-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <MapPin className="h-8 w-8 text-white" />
+                      </div>
+                    </FloatingIcon>
+                    <CardTitle className="text-xl text-slate-900">{area.area}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-slate-600 leading-relaxed">
+                      Response Time: {area.responseTime}
+                    </CardDescription>
+                    <div className="flex flex-wrap gap-2 mt-4">
+                      {area.services.map((service, sIndex) => (
+                        <Badge key={sIndex} variant="secondary" className="text-sm">
+                          {service}
+                        </Badge>
+                      ))}
+                    </div>
+                  </CardContent>
+                </AnimatedCard>
+              ))}
+            </div>
+          </AnimatedList>
+        </div>
+      </section>
+
+      {/* Equipment Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-6 text-slate-900">Our Equipment</h2>
+              <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+                We use state-of-the-art tools and equipment to ensure the highest quality service.
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedList>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {equipment.map((item, index) => (
+                <AnimatedCard key={index} delay={index * 0.1} className="text-center hover:shadow-lg transition-shadow border-0 shadow-md">
+                  <CardHeader>
+                    <FloatingIcon>
+                      <div className="bg-green-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        {item.icon}
+                      </div>
+                    </FloatingIcon>
+                    <CardTitle className="text-xl text-slate-900">{item.name}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-slate-600 leading-relaxed">{item.description}</CardDescription>
+                  </CardContent>
+                </AnimatedCard>
+              ))}
+            </div>
+          </AnimatedList>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-6 text-slate-900">What Our Customers Say</h2>
+              <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+                Hear from our satisfied customers about their experience with KEY 2 BHP.
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedList>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {testimonials.map((testimonial, index) => (
+                <AnimatedCard key={index} delay={index * 0.1} className="text-center hover:shadow-lg transition-shadow border-0 shadow-md">
+                  <CardHeader>
+                    <FloatingIcon>
+                      <div className="bg-red-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Star className="h-8 w-8 text-white" />
+                      </div>
+                    </FloatingIcon>
+                    <CardTitle className="text-xl text-slate-900">Rating: {testimonial.rating}/5</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-slate-600 leading-relaxed">
+                      "{testimonial.text}"
+                    </CardDescription>
+                    <p className="text-slate-600 mt-2">
+                      {testimonial.name}, {testimonial.location}
+                    </p>
+                    <p className="text-slate-600 text-sm mt-1">Service: {testimonial.service}</p>
+                  </CardContent>
+                </AnimatedCard>
+              ))}
+            </div>
+          </AnimatedList>
+        </div>
+      </section>
+
+      {/* Awards Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-6 text-slate-900">Our Achievements</h2>
+              <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+                Recognitions and awards that highlight our commitment to excellence.
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedList>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {awards.map((award, index) => (
+                <AnimatedCard key={index} delay={index * 0.1} className="text-center hover:shadow-lg transition-shadow border-0 shadow-md">
+                  <CardHeader>
+                    <FloatingIcon>
+                      <div className="bg-yellow-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Award className="h-8 w-8 text-white" />
+                      </div>
+                    </FloatingIcon>
+                    <CardTitle className="text-xl text-slate-900">{award.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-slate-600 leading-relaxed">
+                      {award.description}
+                    </CardDescription>
+                    <p className="text-slate-600 text-sm mt-1">Year: {award.year}</p>
+                    <p className="text-slate-600 text-sm mt-1">Organization: {award.organization}</p>
+                  </CardContent>
+                </AnimatedCard>
+              ))}
+            </div>
+          </AnimatedList>
+        </div>
+      </section>
+
+      {/* Safety Measures Section */}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-6 text-slate-900">Our Safety Measures</h2>
+              <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+                Your safety and peace of mind are our top priorities.
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedList>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {safetyMeasures.map((measure, index) => (
+                <AnimatedCard key={index} delay={index * 0.1} className="text-center hover:shadow-lg transition-shadow border-0 shadow-md">
+                  <CardHeader>
+                    <FloatingIcon>
+                      <div className="bg-teal-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        {measure.icon}
+                      </div>
+                    </FloatingIcon>
+                    <CardTitle className="text-xl text-slate-900">{measure.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-slate-600 leading-relaxed">
+                      {measure.description}
+                    </CardDescription>
                   </CardContent>
                 </AnimatedCard>
               ))}
