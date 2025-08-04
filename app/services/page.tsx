@@ -631,8 +631,10 @@ export default function ServicesPage() {
             </p>
               </AnimatedText>
               <AnimatedSection delay={0.6}>
-            <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-lg px-8 py-4">
-                  Call Now: 07309 903243
+            <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-lg px-8 py-4" asChild>
+              <a href="https://wa.me/447309903243" target="_blank" rel="noopener noreferrer">
+                WhatsApp: 07309 903243
+              </a>
             </Button>
               </AnimatedSection>
             </HeroAnimation>
@@ -1349,9 +1351,11 @@ export default function ServicesPage() {
           </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <PulseAnimation>
-            <Button size="lg" className="bg-white text-orange-500 hover:bg-slate-100 text-lg px-8 py-4">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call Now: 07309 903243
+            <Button size="lg" className="bg-white text-orange-500 hover:bg-slate-100 text-lg px-8 py-4" asChild>
+              <a href="https://wa.me/447309903243" target="_blank" rel="noopener noreferrer">
+                <Phone className="mr-2 h-5 w-5" />
+                WhatsApp: 07309 903243
+              </a>
             </Button>
               </PulseAnimation>
             <Button

@@ -18,13 +18,17 @@ export default function EmergencyPage() {
             UK Lock provides instant emergency locksmith services across Manchester.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold">
-              <Phone className="mr-2 h-5 w-5" />
-              Call Now: +44 7309 903243
+            <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold" asChild>
+              <a href="https://wa.me/447309903243" target="_blank" rel="noopener noreferrer">
+                <Phone className="mr-2 h-5 w-5" />
+                WhatsApp: +44 7309 903243
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-red-600">
-              <Phone className="mr-2 h-5 w-5" />
-              Call Now: +44 7936 755530
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-red-600" asChild>
+              <a href="https://wa.me/447936755530" target="_blank" rel="noopener noreferrer">
+                <Phone className="mr-2 h-5 w-5" />
+                WhatsApp: +44 7936 755530
+              </a>
             </Button>
           </div>
         </div>

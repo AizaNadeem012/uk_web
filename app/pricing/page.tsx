@@ -65,9 +65,11 @@ export default function PricingPage() {
                     <span className="text-sm">All vehicle types</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-green-600 hover:bg-green-700">
-                  <Phone className="mr-2 h-4 w-4" />
-                  Call Now
+                <Button className="w-full bg-green-600 hover:bg-green-700" asChild>
+                  <a href="https://wa.me/447309903243" target="_blank" rel="noopener noreferrer">
+                    <Phone className="mr-2 h-4 w-4" />
+                    WhatsApp Now
+                  </a>
                 </Button>
               </CardContent>
             </Card>
@@ -101,9 +103,11 @@ export default function PricingPage() {
                     <span className="text-sm">Smart keys: £95-£120</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-green-600 hover:bg-green-700">
-                  <Phone className="mr-2 h-4 w-4" />
-                  Call Now
+                <Button className="w-full bg-green-600 hover:bg-green-700" asChild>
+                  <a href="https://wa.me/447309903243" target="_blank" rel="noopener noreferrer">
+                    <Phone className="mr-2 h-4 w-4" />
+                    WhatsApp Now
+                  </a>
                 </Button>
               </CardContent>
             </Card>
@@ -137,9 +141,11 @@ export default function PricingPage() {
                     <span className="text-sm">Warranty included</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-green-600 hover:bg-green-700">
-                  <Phone className="mr-2 h-4 w-4" />
-                  Call Now
+                <Button className="w-full bg-green-600 hover:bg-green-700" asChild>
+                  <a href="https://wa.me/447309903243" target="_blank" rel="noopener noreferrer">
+                    <Phone className="mr-2 h-4 w-4" />
+                    WhatsApp Now
+                  </a>
                 </Button>
               </CardContent>
             </Card>

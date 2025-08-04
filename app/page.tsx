@@ -352,9 +352,11 @@ export default function HomePage() {
             </AnimatedText>
             <AnimatedSection>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-                <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-lg px-8 py-4">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call Now: 07309 903243
+                <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-lg px-8 py-4" asChild>
+                  <a href="https://wa.me/447309903243" target="_blank" rel="noopener noreferrer">
+                    <Phone className="mr-2 h-5 w-5" />
+                    WhatsApp: 07309 903243
+                  </a>
                 </Button>
                 <Button
                   size="lg"
@@ -763,9 +765,11 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="mt-8 pt-6 border-t border-slate-700">
-                  <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white font-bold">
-                    <Phone className="mr-2 h-5 w-5" />
-                    Call Now for Emergency Service
+                  <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white font-bold" asChild>
+                    <a href="https://wa.me/447309903243" target="_blank" rel="noopener noreferrer">
+                      <Phone className="mr-2 h-5 w-5" />
+                      WhatsApp for Emergency Service
+                    </a>
                   </Button>
                 </div>
               </div>
@@ -968,9 +972,11 @@ export default function HomePage() {
                 <h3 className="text-2xl font-bold mb-4">Ready for Emergency Service?</h3>
                 <p className="text-lg mb-6">Average response time: {contactInfo.responseTime}</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white">
-                    <Phone className="mr-2 h-5 w-5" />
-                    Call Now: {contactInfo.phone.primary}
+                  <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white" asChild>
+                    <a href="https://wa.me/447309903243" target="_blank" rel="noopener noreferrer">
+                      <Phone className="mr-2 h-5 w-5" />
+                      WhatsApp: {contactInfo.phone.primary}
+                    </a>
                   </Button>
                   <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-slate-900">
                     <Mail className="mr-2 h-5 w-5" />
@@ -1064,13 +1070,17 @@ export default function HomePage() {
               Available 24/7 for all your automotive security needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-orange-600 hover:bg-gray-100 text-lg px-8 py-4 font-bold">
-                <Phone className="mr-2 h-6 w-6" />
-                Emergency: +44 7309 903243
+              <Button size="lg" className="bg-white text-orange-600 hover:bg-gray-100 text-lg px-8 py-4 font-bold" asChild>
+                <a href="https://wa.me/447309903243" target="_blank" rel="noopener noreferrer">
+                  <Phone className="mr-2 h-6 w-6" />
+                  WhatsApp: +44 7309 903243
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-orange-600 text-lg px-8 py-4">
-                <Phone className="mr-2 h-6 w-6" />
-                Emergency: +44 7936 755530
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-orange-600 text-lg px-8 py-4" asChild>
+                <a href="https://wa.me/447936755530" target="_blank" rel="noopener noreferrer">
+                  <Phone className="mr-2 h-6 w-6" />
+                  WhatsApp: +44 7936 755530
+                </a>
               </Button>
             </div>
             <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">

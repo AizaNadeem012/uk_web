@@ -739,18 +739,22 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="tel:07309903243"
+                href="https://wa.me/447309903243"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white text-orange-500 hover:bg-slate-100 text-lg px-8 py-4 rounded-lg font-semibold inline-flex items-center"
               >
                 <Phone className="mr-2 h-5 w-5" />
-                Call Now: 07309 903243
+                WhatsApp: 07309 903243
               </a>
               <a
-                href="tel:07936755530"
+                href="https://wa.me/447936755530"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white text-orange-500 hover:bg-slate-100 text-lg px-8 py-4 rounded-lg font-semibold inline-flex items-center"
               >
                 <Phone className="mr-2 h-5 w-5" />
-                Call Now: 07936 755530
+                WhatsApp: 07936 755530
               </a>
               <a
                 href="mailto:info@key2bhp.co.uk"
