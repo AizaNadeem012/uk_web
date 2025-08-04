@@ -22,7 +22,7 @@ export const metadata = {
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Clock, MapPin, Phone, Shield, Tool, Key, Home, Building, Car } from "lucide-react"
+import { Clock, MapPin, Phone, Shield, Wrench, Key, Home, Building, Car } from "lucide-react"
 
 export default function LocksmithNearMeManchesterPage() {
   return (
@@ -202,10 +202,17 @@ export default function LocksmithNearMeManchesterPage() {
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md flex">
-              <Tool className="h-10 w-10 text-blue-600 mr-4 flex-shrink-0" />
+              {/* Replaced Tool icon with Wrench icon from lucide-react */}
+              <Wrench className="h-10 w-10 text-blue-600 mr-4 flex-shrink-0" />
               <div>
                 <h3 className="text-xl font-bold mb-2">Fully Equipped Vans</h3>
-                <p className="text-gray-700">Our local locksmith vans in Manchester are fully stocked with all the tools and parts needed to solve your lock problems on the first visit, without delays.</p>
+                <p className="text-gray-700">
+                  Our local locksmith vans in Manchester are fully stocked with all the tools and parts needed to solve your lock problems on the first visit, without delays.
+                  <br />
+                  <span className="text-sm text-gray-500">
+                    ہماری مقامی لاکسمتھ وینز مانچسٹر میں مکمل طور پر ساز و سامان سے لیس ہیں تاکہ آپ کے لاک کے مسائل پہلی ہی وزٹ پر بغیر کسی تاخیر کے حل کیے جا سکیں۔
+                  </span>
+                </p>
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Clock, MapPin, Phone, Shield, Wrench as Tool, Lock, CheckCircle, Wrench, DoorClosed } from "lucide-react"
+import { Clock, MapPin, Phone, Shield, Wrench, Lock, CheckCircle, DoorClosed } from "lucide-react"
 
 export const metadata = {
   title: "UPVC Door Lock Repair Manchester | Fast & Reliable Service | UK Lock",
@@ -135,7 +135,7 @@ export default function UPVCDoorLockRepairManchesterPage() {
             <Card className="border-2 border-blue-200 hover:border-blue-400 transition-all">
               <CardHeader>
                 <div className="flex items-center gap-3">
-                  <Tool className="h-8 w-8 text-blue-600" />
+                  <Wrench className="h-8 w-8 text-blue-600" />
                   <CardTitle>Handle Failures</CardTitle>
                 </div>
               </CardHeader>
@@ -199,7 +199,7 @@ export default function UPVCDoorLockRepairManchesterPage() {
             
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 text-blue-600 mb-4">
-                <Tool className="h-8 w-8" />
+                <Wrench className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold mb-2">3. Repair Solution</h3>
               <p className="text-gray-700">
@@ -257,7 +257,7 @@ export default function UPVCDoorLockRepairManchesterPage() {
                   <span>Local UPVC specialists throughout Greater Manchester</span>
                 </li>
                 <li className="flex items-start">
-                  <Tool className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" />
+                  <Wrench className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" />
                   <span>Fully equipped mobile workshops</span>
                 </li>
                 <li className="flex items-start">
@@ -339,7 +339,7 @@ export default function UPVCDoorLockRepairManchesterPage() {
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md flex">
-              <Tool className="h-10 w-10 text-blue-600 mr-4 flex-shrink-0" />
+              <Wrench className="h-10 w-10 text-blue-600 mr-4 flex-shrink-0" />
               <div>
                 <h3 className="text-xl font-bold mb-2">UPVC Specialists</h3>
                 <p className="text-gray-700">Our Manchester technicians specialize in UPVC door mechanisms and locks, with extensive training and experience in diagnosing and repairing all types of UPVC door issues.</p>

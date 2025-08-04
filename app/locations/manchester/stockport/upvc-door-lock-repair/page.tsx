@@ -22,7 +22,7 @@ export const metadata = {
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Clock, MapPin, Phone, Shield, Wrench as Tool, Lock, Wrench, CheckCircle, Building, Home, Settings } from "lucide-react"
+import { Clock, MapPin, Phone, Shield, Wrench, Lock, CheckCircle, Building, Home, Settings } from "lucide-react"
 
 export default function UPVCDoorLockRepairStockportPage() {
   return (
@@ -99,7 +99,7 @@ export default function UPVCDoorLockRepairStockportPage() {
             <Card className="border-2 border-blue-200 hover:border-blue-400 transition-all">
               <CardHeader>
                 <div className="flex items-center gap-3">
-                  <Tool className="h-8 w-8 text-blue-600" />
+                  <Wrench className="h-8 w-8 text-blue-600" />
                   <CardTitle>Broken Multipoint Locks</CardTitle>
                 </div>
               </CardHeader>
@@ -189,7 +189,7 @@ export default function UPVCDoorLockRepairStockportPage() {
             
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 text-blue-600 mb-4">
-                <Tool className="h-8 w-8" />
+                <Wrench className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold mb-2">2. On-Site Assessment</h3>
               <p className="text-gray-700">
@@ -249,7 +249,7 @@ export default function UPVCDoorLockRepairStockportPage() {
                   <span>Fast response times across Stockport (20-30 minutes for emergencies)</span>
                 </li>
                 <li className="flex items-start">
-                  <Tool className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" />
+                  <Wrench className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" />
                   <span>Comprehensive on-site repairs for all UPVC door lock types</span>
                 </li>
                 <li className="flex items-start">
@@ -327,7 +327,7 @@ export default function UPVCDoorLockRepairStockportPage() {
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md flex">
-              <Tool className="h-10 w-10 text-blue-600 mr-4 flex-shrink-0" />
+              <Wrench className="h-10 w-10 text-blue-600 mr-4 flex-shrink-0" />
               <div>
                 <h3 className="text-xl font-bold mb-2">UPVC Specialists</h3>
                 <p className="text-gray-700">Our Stockport locksmiths specialize in UPVC door lock repairs, with extensive training and experience in all types of UPVC door mechanisms.</p>

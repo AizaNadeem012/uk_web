@@ -22,7 +22,7 @@ export const metadata = {
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Clock, MapPin, Phone, Shield, Wrench as Tool, Lock, CheckCircle, Wrench } from "lucide-react"
+import { Clock, MapPin, Phone, Shield, Wrench, Lock, CheckCircle } from "lucide-react"
 
 export default function LockInstallationManchesterPage() {
   return (
@@ -199,7 +199,7 @@ export default function LockInstallationManchesterPage() {
             
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 text-blue-600 mb-4">
-                <Tool className="h-8 w-8" />
+                <Wrench className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold mb-2">3. Precision Installation</h3>
               <p className="text-gray-700">
@@ -335,7 +335,7 @@ export default function LockInstallationManchesterPage() {
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md flex">
-              <Tool className="h-10 w-10 text-blue-600 mr-4 flex-shrink-0" />
+              <Wrench className="h-10 w-10 text-blue-600 mr-4 flex-shrink-0" />
               <div>
                 <h3 className="text-xl font-bold mb-2">Precision Installation</h3>
                 <p className="text-gray-700">We take pride in our meticulous installation process, ensuring your new locks are perfectly fitted for optimal security and smooth operation.</p>

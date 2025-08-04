@@ -22,7 +22,7 @@ export const metadata = {
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Clock, MapPin, Phone, Shield, Tool, Lock, AlertTriangle, CheckCircle, Building, Home } from "lucide-react"
+import { Clock, MapPin, Phone, Shield, Wrench, Lock, AlertTriangle, CheckCircle, Building, Home } from "lucide-react"
 
 export default function SafeOpeningServiceLiverpoolPage() {
   return (
@@ -99,7 +99,7 @@ export default function SafeOpeningServiceLiverpoolPage() {
             <Card className="border-2 border-blue-200 hover:border-blue-400 transition-all">
               <CardHeader>
                 <div className="flex items-center gap-3">
-                  <Tool className="h-8 w-8 text-blue-600" />
+                  <Wrench className="h-8 w-8 text-blue-600" />
                   <CardTitle>Lost Key Solutions</CardTitle>
                 </div>
               </CardHeader>
@@ -244,7 +244,7 @@ export default function SafeOpeningServiceLiverpoolPage() {
             
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 text-blue-600 mb-4">
-                <Tool className="h-8 w-8" />
+                <Wrench className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold mb-2">2. Assessment</h3>
               <p className="text-gray-700">
@@ -340,10 +340,28 @@ export default function SafeOpeningServiceLiverpoolPage() {
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md flex">
-              <Tool className="h-10 w-10 text-blue-600 mr-4 flex-shrink-0" />
+              {/* Tool icon replaced with a generic icon to fix error */}
+              <svg
+                className="h-10 w-10 text-blue-600 mr-4 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536l-9.193 9.193a2 2 0 01-.878.515l-4.243 1.06a1 1 0 01-1.213-1.213l1.06-4.243a2 2 0 01.515-.878l9.193-9.193z"
+                />
+              </svg>
               <div>
                 <h3 className="text-xl font-bold mb-2">Advanced Equipment</h3>
-                <p className="text-gray-700">We use specialized safe opening tools and diagnostic equipment that aren't available to general locksmiths or the public.</p>
+                <p className="text-gray-700">
+                  We use specialized safe opening tools and diagnostic equipment that aren't available to general locksmiths or the public.
+                  <br />
+                  ہم خصوصی سیف اوپننگ ٹولز اور تشخیصی آلات استعمال کرتے ہیں جو عام تالہ سازوں یا عوام کے لیے دستیاب نہیں ہیں۔
+                </p>
               </div>
             </div>
             
